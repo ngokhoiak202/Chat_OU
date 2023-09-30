@@ -9,7 +9,7 @@ services:
     - all
 
   rasa-server:
-    image: rasa-bot:latest
+#    image: rasa-bot:latest
     working_dir: /app
     build: "./"
     restart: always
