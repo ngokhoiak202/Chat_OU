@@ -5,7 +5,6 @@ nlu:
 - intent: out_of_scope
   examples: |
     - ai là hiệu trưởng?
-    - ai chủ tịch tỉnh?
     - tôi muốn đặt xe?
     - (1 + 2 +8)/2*4= bao nhiêu?
 - intent: xin_chao
