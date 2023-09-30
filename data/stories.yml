@@ -1,0 +1,74 @@
+version: "3.1"
+
+stories:
+- story: fallback
+  steps:
+    - action: fallback_action
+
+- story: dau_tu
+  steps:
+  - intent: chu_truong_dau_tu
+  - action: utter_chu_truong_dau_tu
+  - intent: chu_dau_tu
+  - action: utter_chu_dau_tu
+  - intent: quan_ly_du_an
+  - action: utter_quan_ly_du_an
+
+- story: vi_tri_du_an
+  steps:
+  - intent: dia_chi_du_an
+  - action: utter_dia_chi_du_an
+  - intent: xung_quanh_khu_dat
+  - action: utter_xung_quanh_khu_dat
+  - intent: thong_tin_lbt
+  - action: utter_thong_tin_lbt
+  - intent: giao_thong_lbt
+  - action: utter_giao_thong_lbt
+  - intent: xung_quanh_lbt
+  - action: utter_xung_quanh_lbt
+  - intent: vi_tri_dong_nai
+  - action: utter_vi_tri_dong_nai
+  - intent: giao_thong_dong_nai
+  - action: utter_giao_thong_dong_nai
+
+- story: pham_vi_dau_tu_quy_mo
+  steps:
+  - intent: gian_doan_1
+  - action: utter_gian_doan_1
+  - intent: khu_hieu_bo
+  - action: utter_khu_hieu_bo
+- story: tien_dau_tu
+  steps:
+  - intent: tong_muc_dau_tu
+  - action: utter_tong_muc_dau_tu
+  - intent: von_dau_tu
+  - action: utter_von_dau_tu
+- story: hien_trang_cua_truong
+  steps:
+  - intent: co_so_2
+  - action: utter_co_so_2
+  - intent: dieu_kien_phat_trien
+  - action: utter_dieu_kien_phat_trien
+  - intent: chien_luoc
+  - action: utter_chien_luoc
+  - intent: du_an_hien_tai
+  - action: utter_du_an_hien_tai
+- story: su_can_thiet_dau_tu
+  steps:
+  - intent: ly_do_du_an
+  - action: utter_ly_do_du_an
+  - intent: loi_ich_du_an
+  - action: utter_loi_ich_du_an
+  - intent: du_kien_du_an
+  - action: utter_du_kien_du_an
+  - intent: dao_tao_quoc_phong
+  - action: utter_dao_tao_quoc_phong
+  - intent: khu_a
+  - action: utter_khu_a
+- story: muc_tieu
+  steps:
+  - intent: muc_tieu_cap_bach
+  - action: utter_muc_tieu_cap_bach
+  - intent: muc_tieu_lau_dai
+  - action: utter_muc_tieu_lau_dai
+

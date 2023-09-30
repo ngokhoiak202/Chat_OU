@@ -1,0 +1,171 @@
+version: "3.1"
+
+rules:
+- rule: out-of-scope
+  steps:
+  - intent:  nlu_fallback
+  - action: utter_out_of_scope
+
+- rule: tam biet
+  steps:
+  - intent: tambiet
+  - action: utter_tambiet
+
+- rule: xin chao
+  steps:
+  - intent: xin_chao
+  - action: utter_xin_chao
+
+- rule: gioi thieu
+  steps:
+  - intent: gioi_thieu
+  - action: utter_gioi_thieu
+- rule: thoi gian thuc hien
+  steps:
+  - intent: thoi_gian_thuc_hien
+  - action: utter_thoi_gian_thuc_hien
+- rule: quan ly du an
+  steps:
+  - intent: quan_ly_du_an
+  - action: utter_quan_ly_du_an
+# đầu tư
+- rule: chu truong dau tu
+  steps:
+  - intent: chu_truong_dau_tu
+  - action: utter_chu_truong_dau_tu
+- rule: chu dau tu
+  steps:
+  - intent: chu_dau_tu
+  - action: utter_chu_dau_tu
+#vi tri du an
+- rule: vi tri khu dat
+  steps:
+    - intent: dia_chi_du_an
+    - action: utter_dia_chi_du_an
+- rule: xung quoanh khu dat
+  steps:
+    - intent: xung_quanh_khu_dat
+    - action: utter_xung_quanh_khu_dat
+#vi tri khu vuc LBT
+- rule: thong_tin_lbt
+  steps:
+    - intent: thong_tin_lbt
+    - action: utter_thong_tin_lbt
+- rule: giao_thong_lbt
+  steps:
+    - intent: giao_thong_lbt
+    - action: utter_giao_thong_lbt
+- rule: xung_quanh_lbt
+  steps:
+    - intent: xung_quanh_lbt
+    - action: utter_xung_quanh_lbt
+#vị trí tỉnh Đồng Nai
+- rule: vi_tri_dong_nai
+  steps:
+    - intent: vi_tri_dong_nai
+    - action: utter_vi_tri_dong_nai
+- rule: giao_thong_dong_nai
+  steps:
+    - intent: giao_thong_dong_nai
+    - action: utter_giao_thong_dong_nai
+# Phạm vi đầu tư
+- rule: dien tich du an
+  steps:
+  - intent: dien_tich_du_an
+  - action: utter_dien_tich_du_an
+#khu hiệu bộ
+- rule: gian doan hien tai
+  steps:
+  - intent: gian_doan_1
+  - action: utter_gian_doan_1
+- rule: khu hieu bo
+  steps:
+  - intent: khu_hieu_bo
+  - action: utter_khu_hieu_bo
+# tiền đầu tư
+- rule: tong muc dau tu
+  steps:
+  - intent: tong_muc_dau_tu
+  - action: utter_tong_muc_dau_tu
+- rule: von dau tu
+  steps:
+  - intent: von_dau_tu
+  - action: utter_von_dau_tu
+# cơ sở 2
+- rule: co so Long Binh Tan
+  steps:
+  - intent: co_so_2
+  - action: utter_co_so_2
+- rule: dieu kien phat trien
+  steps:
+  - intent: dieu_kien_phat_trien
+  - action: utter_dieu_kien_phat_trien
+- rule: chien luoc sap toi
+  steps:
+  - intent: chien_luoc
+  - action: utter_chien_luoc
+# triển khai dự án
+- rule: du an hien tai
+  steps:
+  - intent: du_an_hien_tai
+  - action: utter_du_an_hien_tai
+#Sự cần thiết đầu tư
+- rule: ly do trien khai du an
+  steps:
+  - intent: ly_do_du_an
+  - action: utter_ly_do_du_an
+- rule: loi ich du an
+  steps:
+  - intent: loi_ich_du_an
+  - action: utter_loi_ich_du_an
+- rule: du kien du an
+  steps:
+  - intent: du_kien_du_an
+  - action: utter_du_kien_du_an
+- rule: dao tao quoc phong
+  steps:
+  - intent: dao_tao_quoc_phong
+  - action: utter_dao_tao_quoc_phong
+- rule: khu a
+  steps:
+  - intent: khu_a
+  - action: utter_khu_a
+#Mục tiêu
+- rule: muc tieu cap bach
+  steps:
+  - intent: muc_tieu_cap_bach
+  - action: utter_muc_tieu_cap_bach
+- rule: Muc tieu lau dai
+  steps:
+  - intent: muc_tieu_lau_dai
+  - action: utter_muc_tieu_lau_dai
+
+- rule: tong_quan_lbt
+  steps:
+  - intent: tong_quan_lbt
+  - action: utter_thong_tin_lbt
+  - action: utter_giao_thong_lbt
+  - action: utter_xung_quanh_lbt
+
+- rule: tong_quan_Dong_Nai
+  steps:
+  - intent: tong_quan_Dong_Nai
+  - action: utter_vi_tri_dong_nai
+  - action: utter_giao_thong_dong_nai
+
+- rule: tong_quan_khu_dat
+  steps:
+    - intent: tong_quan_khu_dat
+    - action: utter_dia_chi_du_an
+    - action: utter_xung_quanh_khu_dat
+
+- rule: tong_quan_dia_diem_dau_tu
+  steps:
+    - intent: tong_quan_dia_diem_dau_tu
+    - action: utter_dia_chi_du_an
+    - action: utter_xung_quanh_khu_dat
+    - action: utter_thong_tin_lbt
+    - action: utter_giao_thong_lbt
+    - action: utter_xung_quanh_lbt
+    - action: utter_vi_tri_dong_nai
+    - action: utter_giao_thong_dong_nai

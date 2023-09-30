@@ -1,0 +1,337 @@
+version: "3.1"
+
+nlu:
+
+- intent: out_of_scope
+  examples: |
+    - ai là hiệu trưởng?
+    - ai chủ tịch tỉnh?
+    - tôi muốn đặt xe?
+    - (1 + 2 +8)/2*4= bao nhiêu?
+- intent: xin_chao
+  examples: |
+    - hi 
+    - hello
+    - Xin chào
+    - Chào bạn
+    - rất vui được gặp bạn
+
+
+- intent: tambiet
+  examples: |
+    - Tạm biệt
+    - Hẹn gặp lại
+    - Chúc bạn một ngày tốt lành
+    - Chúc bạn một buổi tối vui vẻ
+    - Hẹn gặp lại bạn sau
+    - Tạm biệt và hẹn gặp lại
+- intent: gioi_thieu
+  examples: |
+    - Bạn có thể giới thiệu về dự án này?
+    - Giới thiệu cho tôi về dự án này?
+
+- intent: thoi_gian_thuc_hien
+  examples: |
+    - Thời gian xây dựng dự án là bao lâu?
+    - Dự án sẽ được hoàn thành trong bao lâu?
+    - Kế hoạch hoàn thành dự án là khi nào?
+    - Thời gian dự kiến hoàn thành dự án là khi nào?
+    - Cần bao nhiêu thời gian để hoàn thành việc xây dựng dự án?
+    - mất bao lâu để hoàn thành dự án?
+    - Thời gian thực hiện dự án được tính từ khi nào đến khi nào?
+    - Thời gian thực hiện dự án được xác định dựa trên cơ sở nào?
+
+- intent: quan_ly_du_an
+  examples: |
+    - Dự án sẽ được quản lý như thế nào?
+    - Chủ đầu tư thuê đơn vị tư vấn quản lý dự án.    
+    - Cơ quan, tổ chức nào sẽ quản lý dự án này?
+    - Hình thức quản lý dự án nào phù hợp với dự án này?
+    - Dự án này sẽ áp dụng hình thức quản lý dự án nào?
+
+- intent: chu_truong_dau_tu
+  examples: |
+    - Quyết định chủ trương đầu tư là cơ quan nào cấp?
+    - Chủ trương đầu tư của dự án do tổ chức nào cấp?
+    - đã có chủ trương đầu tư chưa?
+- intent: chu_dau_tu
+  examples: |
+    - Ai là chủ đầu tư của dự án?
+    - Chủ đầu tư là ai?
+    - Hãy cho tôi biết về chủ đầu tư?
+
+#vi trí dự án
+- intent: tong_quan_dia_diem_dau_tu
+  examples: |
+    - Thông tin tổng quan về địa điểm đầu tư?
+    - giới thiệu về địa điểm đầu tư?
+    - chi tiết thông tin về địa điểm đầu tư?
+
+- intent: dia_chi_du_an
+  examples: |
+    - Cho tôi biết dự án được xây dựng ở đâu?
+    - dự án được triển khai ở đâu? 
+    - Dự án được thực hiện ở đâu?
+    - Địa chỉ thực hiện dự án là gì?
+    - Dự án đang được thực hiện ở đâu?
+    - Vị trí cụ thể của dự án là ở đâu?
+    - Có thể cung cấp cho tôi địa chỉ của địa điểm xây dựng dự án không?
+    - Dự án sẽ được xây dựng ở khu vực nào?
+- intent: xung_quanh_khu_dat
+  examples: |
+    - khu đất xây dựng dự án có gì đặc biệt?
+    - Vị trí địa lý của khu đất có gì đặc biêt?
+    - Khu đất giáp với các khu vực nào?
+    - Xung quanh khu đất này là gì?
+- intent: tong_quan_khu_dat
+  examples: |
+    - Tổng quan vị trí khu đất xây dựng dự án?
+    - giới thiệu cho tôi về khu đất xây dựng dự án?
+    - cho tôi thông tin chi tiết về khu đất xây dựng dự án?
+# vị trí LBT
+- intent: thong_tin_lbt
+  examples: |
+    - Phường Long Bình Tân ở đâu?
+    - Tôi muốn biết thêm thông tin về phường Long Bình Tân?
+    - Diện tích của phường Long Bình Tân?
+    - Dân số của phường Long Bình Tân?
+    - Phường Long Bình Tân có bao nhiêu dân cư?
+- intent: giao_thong_lbt
+  examples: |
+    - Giao thông của phường Long Bình Tân có gì thuận lợi?
+    - Phường Long Bình Tân có giao thông như thế nào?
+    - Các tuyến đường quốc lộ đi qua phường Long Bình Tân?
+    - Phường Long Bình Tân cách trung tâm thành phố bao nhiêu km?
+    - Phường Long Bình Tân nằm về hướng nào?
+- intent: xung_quanh_lbt
+  examples: |
+    - Phường Long Bình Tân có vị trí như thế nào?
+    - Hãy cho tôi biết thêm về vị trí của phường Long Bình Tân?
+    - Vị trí địa lý của phường Long Bình Tân có gì đặc biêt?
+    - phường Long Bình Tân giáp với các khu vực nào?
+    - Xung quanh phường Long Bình Tân là gì?
+    - Tôi muốn biết địa giới hành chính của phường Long Bình Tân.
+- intent: tong_quan_lbt
+  examples: |
+    - Tổng quan vị trí của long bình tân?
+    - giới thiệu cho tôi về long bình tân?
+    - cho tôi thông tin chi tiết về long bình tân?
+#Vị trí tỉnh Đồng Nai
+- intent: vi_tri_dong_nai
+  examples: |
+    - Tại sao lại chọn Đồng Nai để xây dựng dự án?
+    - Tại sao nhà trường lại đặt cơ sở tại Đồng Nai?
+    - Có tiềm năng gì khi xây dựng dự án tại tỉnh Đồng Nai.
+    - Tôi muốn biết địa giới hành chính của tỉnh Đồng Nai.
+    - Tỉnh Đồng Nai có gì thuận lợi?
+    - Đồng Nai giáp với những tỉnh nào?
+    - Phía bắc Đồng Nai giáp với tỉnh nào?
+    - Phía nam Đồng Nai giáp với tỉnh nào?
+    - Phía tây Đồng Nai giáp với tỉnh nào?
+    - Phía đông Đồng Nai giáp với tỉnh nào?
+- intent: giao_thong_dong_nai
+  examples: |
+    - Giao thông của tỉnh Đồng Nai có gì thuận lợi?
+    - Các tuyến đường quốc lộ đi qua ptỉnh Đồng Nai?
+    - Tình hình giao thông của tỉnh Đồng Nai như thế nào?
+    - Đồng Nai có những tuyến giao thông nào?
+    - Các tuyến đường giao thông chính của tỉnh Đồng Nai là gì?
+    - Cho tôi biết Đồng Nai có sân bay không?
+    - Đồng nai có giao thông như thế nào?
+- intent: tong_quan_Dong_Nai
+  examples: |
+    - Tổng quan vị trí của Đồng Nai?
+    - giới thiệu cho tôi về tỉnh Đồng Nai?
+    - cho tôi thông tin chi tiết về tỉnh Đồng Nai?
+
+# Phạm vi đầu tư
+- intent: dien_tich_du_an
+  examples: |
+    - Diện tích khu đất là bao nhiêu?
+    - Diện tích xây dựng Khối hiệu bộ theo quy hoạch là bao nhiêu?
+    - Diện tích theo quy hoạch là bao nhiêu?
+    - Diện tích đất dành cho các công trình hạ tầng, giao thông của dự án là bao nhiêu?
+    - Theo quy hoạch thì diện tích dự án là bao nhiêu?
+    - Diện tích xây dựng là bao nhiêu?
+#phạm vi đàu tư (khu hiệu bộ)
+- intent: gian_doan_1
+  examples: |
+    - Công trình khối hiệu bộ sẽ được xây dựng như nào?
+    - Bao giờ thì khối hiệu bộ sẽ được xây dựng?
+    - Dự án tiếp theo mà trường sẽ triển khai?
+    - Dự án đầu tư xây dựng tiếp theo mà nhà trường triển khai là gì?
+    - dự án đầu tư sắp tới là gì?
+    - dự án đầu tư xây dựng sẽ triển khai tiếp theo là gì?
+    - Tiếp theo sẽ đầu tư xây dựng công trình gì?
+    - nơi làm việc của cán bộ, viên chức của nhà trường sẽ dược xây dựng khi nào?
+    - lúc nào thỉ triển khai xây dựng dự án nơi làm việc của cán bộ, viên chức của nhà trường?
+    - dự án tiếp theo là gì?
+    - sau khi hoàn thành xong dự án xây dựng hiện tại nhà trường sẽ tiếp tục dự án đầu tư xây dựng nào?
+- intent: khu_hieu_bo
+  examples: |
+    - Diện tích dành cho khu hiệu bộ là bao nhiêu?
+    - Theo quy hoạch khu hiệu bộ có diện tích xây dựng là bao nhiêu?
+    - Dự tính diện tích của khu hiệu bộ là bao nhiêu?
+    - Diện tích xây dựng khu hiệu bộ là?
+    - Quy mô nơi làm việc của cán bộ, viên chức của nhà trường là bao nhiêu?
+    - Diện tích làm việc của cán bố, viên chức của nhà trường?
+    - tỉ lệ nơi làm việc của cán bộ, viên chức của nhà trường so với toàn bộ khu đất?
+    - cán bộ, viên chức của nhà trường sẽ làm việc ở đâu.
+    - văn phòng của cán bộ, viên chức của nhà trường ở đâu?
+# tiền đầu tư
+- intent: tong_muc_dau_tu
+  examples: |
+    - Tổng mức đầu tư dự kiến là bao nhiêu?
+    - Dự án dự kiến có tổng đầu tư bao nhiêu?
+    - Tiền đầu tư dự án là bao nhiêu?
+    - tổng kinh phí khi xây dựng dự án là?
+    - Tổng tiền để hoàn thành xong dự án?
+    - Cần bao nhiêu tiền để xây dựng dự án?
+    - tổng tiền để hoàn thiện dự án?
+    - Dự kiến tổng mức đầu tư xây dựng dự án là bao nhiêu?
+    - Có thể cung cấp cho tôi thông tin về tổng mức đầu tư của dự án không?
+
+- intent: von_dau_tu
+  examples: |
+    - Nguồn vốn đầu tư xây dựng dự án là gì?
+    - Dự án được đầu tư bằng vốn gì?
+    - Dự án có sử dụng vốn vay không?
+    - Vốn vay của dự án là từ đâu?
+    - Nguồn vốn dự án được phân loại như thế nào?
+    - Nguồn vốn đầu tư dự án là từ đâu?
+    - Nguồn vốn dự án của dự án này là gì?
+    - Nguồn vốn dự án được quản lý như thế nào?
+    - Nguồn vốn chủ sở hữu của dự án được huy động từ đâu?
+    - Vốn đầu tư công có nguồn gốc từ đâu?
+    - Dự án có khả năng huy động được bao nhiêu vốn?
+    - Dự án sẽ huy động vốn từ những nguồn nào?
+    - Dự án có kế hoạch huy động vốn như thế nào?
+
+
+# cơ sở 2
+- intent: co_so_2
+  examples: |
+    - trước đây khu đất này được sử dụng làm gì?
+    - Nhà trường đã sử dụng khu đất này như thế nào?
+    - khu đất này đã được nhà trường ử dụng làm gì?
+    - Cơ sở này đang được sử dụng như thế nào?
+    - Hiện tại cơ sở 2 đáp ứng đủ điều kiện giảng dạy cho bao nhiêu sinh viên?
+    - đang có bao nhiêu sinh viên học tập tại đây?
+    - các môn học được giảng dạy tại cớ sở 2 là gì?
+    - Các sinh viên học gì ở cơ sở 2?
+    - Cơ sở hiện tại đáp ứng được cho bao nhiêu sinh viên
+    - Chức năng hiện tại của cơ sở này?
+    - Hiện tại khu đất thi công dự án đang được sử dụng như thế nào?
+    - Cơ ở này thực hiện công việc gì?
+    - Hiện tại cơ sở đang thực hiện công việc gì?
+    - Trước đay khi đất thực hiện công việc gì?
+
+- intent: dieu_kien_phat_trien
+  examples: |
+    - Làm thế nào để đảm bảo nguồn thu tại cơ ở này?
+    - Làm thế nào để kêu gọi đầu tư?
+    - Làm sao để thu hút đầu tư từ các đơn vị ngoài trường?
+    - Lý do để các đơn vị ngoài truờng đầu tư vào dự án?
+    - Tại sao các đơn vị ngoài trường phải đầu tư vào dự án này?
+    - cơ sở có đảm bảo được nguồn thu?
+    - sau khi hoàn thành dự án có thu lại lợi nhuận chứ?
+    - Đề án tạo điều kiện để phát triển?
+    - Làm sao để đảm bảo nguồn đầu tư từ bên ngoài?
+    - Cơ sở để phát triền và kêu gọi đầu tư?
+    - Tiềm năng phát triển của cơ sở này từ đâu?
+    - Lý do để đầu tư vào dự án này?
+
+- intent: chien_luoc
+  examples: |
+    - Chiến lược của nhà trường trong những năm tới là gì?
+    - Mục tiêu của nhà trường?
+    - Chiến lược phát triển của nhà trường là gì?
+    - nhà trường đề ra mục tiêu gì trong chiến lược phát triển?
+    - Các mục tiêu của chiến lược phát triển là gì?
+    - Các chiến lược của chiến lược phát triển là gì?
+    - Nhà trường có chiến lược phát triền trong những năm tới như thế nào?
+    - Sau khi hoàn thành dự án nhà trường có dự định gì?
+    - kế hoạch phát triền sau khi hoàn thành dự án là gì?
+    - Cơ sở 2 trong tương lai sẽ có tầm ảnh ưởng như thế nào?
+    - Kế hoạch phát triền của nhà trường trong tương lai?
+
+# triển khai dự án
+- intent: du_an_hien_tai
+  examples: |
+    - Dự án này đang thực hiện xây dựng cái gì?
+    - Dự án đang ở gian đoạn nào?
+    - Nhà trường đang triển khai các dự án nào?
+    - Nhà trường sẽ thực hiện các dự án nào trong tương lai?
+    - Tình hình xây dựng hiện tại ra sao?
+    - Hiện tại dự án đang xây dựng cái gì?
+    - Hiện tại dự án đang ở gian đoạn nào?
+    - Dự án hiện tại sẽ hoàn thành lúc nào?
+    - Công trình đang xây dựng là gì?
+    - Bao giờ thì hoàn thành công trình đang xây dựng?
+
+# sự cần thiết đầu tư
+- intent: ly_do_du_an
+  examples: |
+    - Tại sao triển khai dự án này?
+    - Lý do để xây dựng cơ sở này?
+    - Tại sao phải đầu tư dự án này?
+    - Tại sao cơ sở 2 được chọn làm địa điểm đào tạo chính của trường?
+    - Lý do cơ sở Long BÌnh Tân được chọn là cơ sở chính?
+    - Vì sao nhà trường lựa chọn cơ sở 2 làm cơ sở chính?
+    - Nguyên do nhà trường lựa chọn địa điểm này để xây dựng dự án?
+- intent: loi_ich_du_an
+  examples: |
+    - Lợi ích mà cơ sở này mang lại cho xã hội?
+    - Xây dựng dự án mang lại lợi ích gì cho địa phương?
+    - dự án mang lại điều gì trong tương lai? 
+    - lợi ích khi hoàn thành dự án?
+    - Dự án có phù hợp với quy hoạch phát triển của địa phương không?
+    - Dự án có ảnh hưởng như thế nào đến tỉnh Đồng Nai.
+    - Dự án đáp ứng được như cầu học tập của bao nhiêu sinh viên?
+    - sau khi hoàn thành nhà trường có thể giảng dạy cho bao nhiêu sinh viên?
+    - khi hoàn thành dự án có mang lại lợi ích gì về kinh tế cho địa phương và các khu vực lân cận không?
+    - Nhà trường có đảm bảo đáp ứng được nhu câu bổ sung và nâng cao năng lực nguồn lực trình độ cao tại các tỉnh trong khu vực xung quanh không?
+    - Làm sao để đảm bảo đào tạo nguồn nhân lực chất lượng cao sau khi hoàn thành?
+- intent: du_kien_du_an
+  examples: |
+    - Năm tới nhà tường có dự kiến gì trong việc đào tạo tại cơ sở này?
+    - Dự án phục vụ cho nhu cầu gì?
+    - Dự án phục vụ cho nhu cầu gì?
+    - Quy mô đào tạo trong năm tới?
+    - Vì sao phải đầu tư xây dự khu hiệu bộ?
+    - hiện tại có đáp ứng đáp ứng nhu cầu về giải quyết các thủ tục hành chính,cung cấp dịch vụ cho sinh viên, cán bộ, giảng viên hiện đang công tác, học tập tại trường?
+    - khối giảng đường 2C được đưa vào sử dụng khi nào?
+    - bao giờ có thể sử dụng được khối giảng đường 2C?
+    - Bao giờ thì có thể sử dụng dự án đang xây dựng?
+    - lúc nào thì đưa dự án khối giảng đường 2c hiện đang xây dựng vào sử dụng?
+    - vì sao lại cấp thiết xây dựng khối hiệu bộ?
+    - Nhu cầu cấp thiết bây giờ là gì?
+- intent: dao_tao_quoc_phong
+  examples: |
+    - Điều kiện để thành lập trung tâm đào tạo quốc phòng?
+    - Để phát triển thành Trung tâm đào tạo quôc phòng cho toàn khu vực, Nhà trường cần làm gì?
+    - làm sao để được phê duyệt thành lập Trung tâm đào tạo quốc phòng tại cơ sở
+    - việc Đầu tư xây dựng Khối hiệu bộ (khu A) có ảnh hưởng gì đến việc thành lập Trung tâm đào tạo quốc phòng?
+    - đề án đào tạo giáo dục quốc phòng tại cơ sở Long Bình Tân đã được phê duyệt hay chưa?
+- intent: khu_a
+  examples: |
+    - Khối hiệu bộ (Khu A) được xây dựng và quy hoạch như thế nào?
+    - Chức năng của khối hiệu bộ (khu A) là gì?
+    - Khu hiệu bộ sắp xây dựng phục vụ nhu cầu gì?
+    - Dự án đầu tư xây dựng Khối hiệu bộ (khu A) có gì đặc biệt?
+    - giới thiệu về dự án đầu tư xây dựng Khối hiệu bộ (khu A)
+
+#Mục tiêu
+- intent: muc_tieu_cap_bach
+  examples: |
+    - Việc đầu tư dự án giải quyết được nhu cầu cấp bách gì?
+    - mục tiêu cấp bách là gì?
+    - Khi dự án hoàn thành có đáp ứng được các như cầu cấp thiết không?
+    
+
+- intent: muc_tieu_lau_dai
+  examples: |
+    - Việc đầu tư dự án mới giải quyết được những vấn đề gì gì?
+    - mục tiêu lâu dài của nhà trường khi đầu tư xây dựng dự án là gì?
+    - nhà trường đặt mục tiêu gì khi đầu tư xây dựng dự án?
+

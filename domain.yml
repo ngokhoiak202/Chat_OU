@@ -1,0 +1,213 @@
+version: "3.1"
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+intents:
+  - out_of_scope
+  - xin_chao
+  - tambiet
+  - gioi_thieu
+  - thoi_gian_thuc_hien
+  - quan_ly_du_an
+  - chu_truong_dau_tu
+  - chu_dau_tu
+
+#vi tri du an
+  - tong_quan_dia_diem_dau_tu
+  - tong_quan_khu_dat
+  - dia_chi_du_an
+  - xung_quanh_khu_dat
+#vi tri khu vuc LBT
+  - thong_tin_lbt
+  - giao_thong_lbt
+  - xung_quanh_lbt
+  - tong_quan_lbt
+#vị trí tỉnh Đồng Nai
+  - vi_tri_dong_nai
+  - giao_thong_dong_nai
+  - tong_quan_Dong_Nai
+# Phạm vi đầu tư
+  - dien_tich_du_an
+#khu hiệu bộ
+  - gian_doan_1
+  - khu_hieu_bo
+# tiền đầu tư
+  - tong_muc_dau_tu
+  - von_dau_tu
+# cơ sở 2
+  - co_so_2
+  - dieu_kien_phat_trien
+  - chien_luoc
+# triển khai dự án
+  - du_an_hien_tai
+#Sự cần thiết đầu tư
+  - ly_do_du_an
+  - loi_ich_du_an
+  - du_kien_du_an
+  - dao_tao_quoc_phong
+  - khu_a
+#Mục tiêu
+  - muc_tieu_cap_bach
+  - muc_tieu_lau_dai
+
+responses:
+
+  utter_out_of_scope:
+    - text: "Xin lỗi, tôi không hiểu câu hỏi của bạn. Bạn có thể thử lại không?"
+  utter_tambiet:
+    - text: "Rất vui được gặp bạn. Tạm biệt"
+  utter_xin_chao:
+    - text: "Xin chào. Tôi có tể giúp gì cho bạn."
+  utter_gioi_thieu:
+    - text: "Dự án xây dựng trường Đại học Mở TP.HCM tại Đường Trương Văn Hải, Phường Long Bình Tân, Thành phố Biên
+              Hòa, tỉnh Đồng Nai. Đây sẽ là cơ sở chính của trường."
+  utter_thoi_gian_thuc_hien:
+    - text: "Thời gian thực hiện: 2023-2026"
+
+  utter_quan_ly_du_an:
+    - text: "Hình thức quản lý dự án: Chủ đầu tư thuê đơn vị tư vấn quản lý dự án."
+
+  utter_chu_truong_dau_tu:
+    - text: "Cấp quyết định chủ trương đầu tư: Trường Đại học Mở Thành phố Hồ Chí Minh"
+
+  utter_chu_dau_tu:
+    - text: "Chủ đầu tư là Trường Đại học Mở Thành phố Hồ Chí Minh"
+
+#vi trí dự án
+  utter_dia_chi_du_an:
+    - text: "Dự án được xây dựng tại Đường Trương Văn Hải, Phường Long Bình Tân, Thành phố Biên Hòa, tỉnh Đồng Nai."
+
+  utter_xung_quanh_khu_dat:
+    - text: "- Phía Bắc: giáp suối Bà Lúa và trường Cao đẳng Công nghệ Sonadezi
+            - Phía Nam: giáp khu dân cư phường Long Bình Tân
+            - Phía Đông: giáp đất quân sự thuộc sư đoàn 309
+            - Phía Tây: giáp suối Bà Lúa và khu cây xanh ven suối"
+
+# vị trí LBT
+  utter_thong_tin_lbt:
+  - text: "phường Long Bình Tân là một phường thuộc thành phố Biên Hòa, tỉnh
+          Đồng Nai. Phường Long Bình Tân có diện tích 11,44 km2, dân số năm 2017 là 57427 người,
+          mật độ dân số đạt 5.020 người/km. "
+  utter_giao_thong_lbt:
+    - text: "Phường nằm về phía Nam thành phố Biên Hòa, bên sông  Đồng Nai, cách trung tâm thành phố khoảng 7 km, có 2 
+            quốc lộ chính đi qua là Quốc lộ 1A và Quốc lộ 51."
+  utter_xung_quanh_lbt:
+    - text: "- Phía đông giáp các phường Long Bình, phường Phước Tân
+                - Phía tây giáp Thành phố Hồ Chí Minh và tỉnh Bình Dương
+            - Phía nam giáp phường An Hòa và xã Long Hưng
+            - Phía bắc giáp phường An Bình."
+
+# vị trí tỉnh Đồng Nai
+  utter_vi_tri_dong_nai:
+    - text: "Đồng Nai có vị trí, địa hình thuận lợi ở nhiều mặt, năm giao thoa giữa cao nguyên Trung bộ và
+            đồng bằng Bắc bộ: phía Đông giáp tỉnh Bình Thuận; phía Bắc giáp Lâm Đồng: phía Tây Bắc
+            giáp Bình Dương, Bình Phước; phía Tây giáp Thành phố Hồ Chí Minh; phía Nam giáp tỉnh Bà
+            Rịa - Vũng Tàu; có quôc lộ trực tiếp đến các đô thị trong khu vực."
+  utter_giao_thong_dong_nai:
+    - text: "Đồng Nai có quôc lộ trực tiếp đến các đô thị trong khu vực; đường sắt xuyên Việt qua địa
+            bàn Đồng Nai dài 85 km; sân bay quốc tế Tân Sơn Nhất và sân bay quân sự Biên Hòa là cầu
+            hàng không thường trực; bến cảng Thị Vải, đủ để giao thương với tàu vạn tấn đến từ khắp nơi.
+            Với vị trí này, Đồng Nai như là nút giao thông, giao lưu kinh tế - văn hóa trong vùng kinh tế
+            trọng điểm ở phía Nam."
+
+# Phạm vi đầu tư
+  utter_dien_tich_du_an:
+  - text: "Diện tích khu đất khoảng 32,33 ha."
+
+# khu hiệu bộ
+  utter_gian_doan_1:
+    - text: "Đầu tư xây dựng công trình Khối hiệu bộ (khuA) theo bản vẽ quy hoạch 1/500 đã được phê duyệt.
+          Nhà trường sẽ tiếp tục triển khai dự án Đầu tư xây dựng Khối hiệu bộ (khu A) - Cơ sở Long Bình Tân để 
+          phục vụ trực tiếp công tác quản lý hành chính, đào tạo và nghiên cứu khoa học của Nhà trường."
+  utter_khu_hieu_bo:
+    - text: "Diện tích đất dành cho khu hiệu bộ theo quy hoạch được duyệt: 10.800m. Đây là nơi làm việc của cán bộ, 
+             viên chức của nhà trường với tổng diện tích khu đất là 10.800m2, chiếm tỷ lệ 3,34% tổng diện tích khu đất"
+# tiền đầu tư
+  utter_tong_muc_dau_tu:
+  - text: "Xin lỗi tôi không thể cho bạn biết về thông tin này"
+  utter_von_dau_tu:
+  - text: "Nguồn vốn đầu tư là vốn từ nguồn thu hợp pháp dành để đầu tư (Vốn đầu tư công) và vốn vay kích cầu."
+# cơ sở 2
+  utter_co_so_2:
+  - text: "Hiện nay, Nhà trường đang sử dụng cơ sở 2 — Long Bình Tân vào việc giảng dạy giáo dục thể
+          chất và giáo dục quốc phòng cho khoảng 4000 sinh viên chính quy/năm đồng thời triển khai
+          công tác tuyển sinh, đào tạo bồi dưỡng các hệ từ xa, vừa học vừa làm, bồi dưỡng nghiệp vụ tại
+          cơ sở."
+
+  utter_dieu_kien_phat_trien:
+  - text: "Năm 2020, Trường đã được Bộ Giáo dục & Đào tạo phê duyệt Đề án tự chủ đào tạo giáo dục
+          quốc phòng và an ninh đồng thời phê duyệt Đề án khai thác cơ sở vật chất đã được đầu tư tại
+          Cơ sở 2 - Long Bình, tạo điều kiện phát triển đa dạng nguồn thu tại cơ sở và kêu gọi đầu tư từ
+          các đơn vị ngoài Trường."
+  utter_chien_luoc:
+  - text: "Trong chiến lược phát triển của Trường đến năm 2030, Trường sẽ phấn đấu trở thành Đại học
+          với các Trường thành viên, khi đó Cơ sở 2 — Long Bình sẽ trở thành cơ sở đào tạo trọng điểm
+          cho các tỉnh miền Đông Nam Bộ."
+
+# triển khai dự án
+  utter_du_an_hien_tai:
+  - text: "Hiện nay, Nhà trường đang triển khai các dự án đầu tư xây dựng giai đoạn 2021- 2024 theo kế
+          hoạch chiến lược phát triển Trường giai đoạn 2021-2030 và Đề án phát triển cơ sở vật chất giai
+          đoạn 2021-2030. Nhà trường đang triển khai thực hiện dự án đầu tư xảy dựng công trình “Khối
+          giảng đường 2C-Cơ sở Long Bình Tân” với quy mô 12.000 m2 sàn phục vụ đào tạo, dự kiến
+          hoàn thành trong năm 2024. "
+#Sự cần thiết đầu tư
+  utter_ly_do_du_an:
+  - text: "Trong bối cảnh toàn cầu hóa và hội nhập kinh tế thế giới cũng như sự đổi mới nhanh chóng của
+          công nghệ và kỹ thuật, yêu cầu chất lượng đào tạo của xã hội ngày càng tăng lên, điều này đòi
+          hỏi các trường đại học Việt Nam, trong đó có Trường Đại học Mở Thành phố Hồ Chí Minh phải
+          đổi mới mạnh mẽ hoạt động đào tạo.
+          Bắt nguồn từ định hướng phát triển cơ sở vật chất của Nhà Trường giai đoạn 2021-2030 trong
+          đó xác định Trường Đại học Mở TP.HCM sẽ trở thành ĐẠI HỌC bao gồm các Trường Đại học
+          thành viên, vì thế cơ sở Long Bình Tân sẽ trở thành địa điểm đào tạo chính của Nhà trường
+          trong tương lai."
+  utter_loi_ich_du_an:
+  - text: "Việc thành lập Phân hiệu và đầu tư cơ sở vật chất tại cơ sở Long Bình Tân là phù hợp với quy
+            hoạch phát triển kinh tế - xã hội của trỉnh Đồng Nai; đáp ứng được nhu câu bổ sung và nâng
+            cao năng lực nguồn lực trình độ cao tại các tỉnh trong vùng kinh tế trọng điểm Đông Nam Bộ,
+            gắn với vùng duyên hải Nam Trung bộ, các tỉnh Tây Nguyên và các tỉnh Tây Nam Bộ.
+            
+            Sau khi triển khai các dự án đầu tư xây dựng tại cơ sở Long Bình Tân sẽ đáp ứng nhu cầu học
+            tập cho hơn 10.000 sinh viên của Trường, tăng chất lượng hoạt động đào tạo, nghiên cứu khoa
+            học. Dự án góp phần đào tạo nguồn nhân lực chất lượng cao cho tỉnh Đồng Nai nói riêng và cả
+            nước nói chung, đây mạnh công nghiệp hóa và hiện đại hóa đất nước."
+  utter_du_kien_du_an:
+    - text: "Đến năm 2023, Nhà Trường dự kiến đưa vào sử dụng khối giảng đường 2C và các hạng mục
+              phụ trợ với quy mô đào tạo khoảng 4.800 sinh viên. Với cơ sở vật chất hiện có, việc đáp ứng
+              nhu cầu về giải quyết các thủ tục hành chính,cung cấp dịch vụ cho sinh viên, cán bộ, giảng viên
+              hiện đang công tác, học tập tại trường là chưa đáp ứng. Vì vậy, dự án Đầu tư xây dựng Khối
+              hiệu bộ (khu A) - Cơ sở Long Bình Tân phục vụ cho nhu cầu cấp thiết ấy."
+  utter_dao_tao_quoc_phong:
+  - text: "Bên cạnh đó, Nhà Trường đã được Bộ GD&ĐT phê duyệt đề án đào tạo giáo dục quốc phòng
+          tại cơ sở Long Bình Tân vào năm 2020. Để phát triển thành Trung tâm đào tạo quôc phòng cho
+          toàn khu vực, Nhà trường cần nâng cấp, đầu tư bổ sung các hạng mục về cơ sở vật chất và
+          dụng cụ, khí cụ phục vụ cho công tác đào tạo quôc phòng và việc Đầu tư xây dựng Khối hiệu
+          bộ (khu A) cũng là 01 trong những điều kiện để Nhà Trường được phê duyệt thành lập Trung
+          tâm đào tạo quốc phòng tại cơ sở trong tương lai."
+  utter_khu_a:
+  - text: "Dự án đầu tư xây dựng Khối hiệu bộ (khu A) sẽ được quy hoạch và xây dựng theo kiến trúc
+          văn minh, hiện đại, thống nhất giữa các khu sinh hoạt chung với các khu chức năng chuyên biệt
+          và hệ thống dịch vụ, tiện ích tiên tiến khép kín nhằm tối ưu hóa nhu cầu giải quyết các công
+          việc hành chính của sinh viên, cán bộ, giảng viên."
+
+#Mục tiêu
+  utter_muc_tieu_cap_bach:
+      - text: "Việc đầu tư dự án mới giải quyết được nhu cầu cấp bách xử lý công việc hành chính và điều hành của
+              cán bộ quản lý, viên chức phục vụ các dịch vụ hành chính cho sinh viên đang học tập tại
+              Trường, đồng thời tăng cường tính thuận tiện, an ninh của sinh viên và cán bộ giảng viên Nhà
+              trường."
+  utter_muc_tieu_lau_dai:
+    - text: "mục tiêu lâu dài của nhà truờng là ổn định cơ sở học tập giúp việc quản lý hiệu quả. Thu hút sinh viên 
+              lượng sinh viên đến học tập, mở rộng thêm các ngành nghề đáp ứng nhu cầu phát triển của xã hội.
+              
+              Từng bước hiện đại hóa cơ sở vật chất đáp ứng quy mô đào tạo, phù hợp với quy hoạch chung
+             phát triển Nhà trường giai đoạn 2020-2025, tầm nhìn 2030. Sử dụng tối đa lợi thế của khu đất,
+             tạo dựng cảnh quan khu vực, xây dựng một Campus kiến trúc hiện đại và sử dụng công năng
+             hiệu quả, khẳng định vị thế của Trường Đại học Mở Thành phố Hồ Chí Minh trong hệ thống các
+             trường đại học"
+
+
+
+
+
