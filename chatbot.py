@@ -13,6 +13,6 @@ while bot_message != "Rất vui được gặp bạn. Tạm biệt":
         print("\n:", end=' ')
         print (f"{bot_message}")
 
-# rasa run -m models --endpoints endpoints.yml --port 5002 --credentials credentials.yml
+#   models --endpoints endpoints.yml --port 5002 --credentials credentials.yml
 # rasa run actions
 # run chatbot.py
