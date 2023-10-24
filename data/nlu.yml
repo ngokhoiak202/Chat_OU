@@ -15,7 +15,6 @@ nlu:
     - Chào bạn
     - rất vui được gặp bạn
 
-
 - intent: tambiet
   examples: |
     - Tạm biệt
@@ -28,6 +27,7 @@ nlu:
   examples: |
     - Bạn có thể giới thiệu về dự án này?
     - Giới thiệu cho tôi về dự án này?
+    - Giới thiệu về dự án?
 
 - intent: thoi_gian_thuc_hien
   examples: |
@@ -326,7 +326,6 @@ nlu:
     - Việc đầu tư dự án giải quyết được nhu cầu cấp bách gì?
     - mục tiêu cấp bách là gì?
     - Khi dự án hoàn thành có đáp ứng được các như cầu cấp thiết không?
-    
 
 - intent: muc_tieu_lau_dai
   examples: |
